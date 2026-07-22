@@ -3,7 +3,7 @@
   "displayName": "Tailwind Grid Visualizer",
   "description": "Visualize Tailwind CSS grid-cols definitions with proportional column diagrams on hover",
   "version": "0.1.0",
-  "publisher": "your-name",
+  "publisher": "rispng",
   "engines": {
     "vscode": "^1.80.0"
   },
