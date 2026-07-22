@@ -1,0 +1,43 @@
+{
+  "name": "tailwind-grid-visualizer",
+  "displayName": "Tailwind Grid Visualizer",
+  "description": "Visualize Tailwind CSS grid-cols definitions with proportional column diagrams on hover",
+  "version": "0.1.0",
+  "publisher": "your-name",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Tailwind Grid Visualizer",
+      "properties": {
+        "tailwindGridVisualizer.barWidth": {
+          "type": "number",
+          "default": 40,
+          "description": "Max character width of the visualization bars"
+        },
+        "tailwindGridVisualizer.inlineHint": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show inline column count hint after grid-cols classes"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "package": "npx @vscode/vsce package --no-dependencies --allow-missing-repository"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.80.0",
+    "@types/node": "^18.0.0",
+    "typescript": "^5.3.0",
+    "@vscode/vsce": "^2.22.0"
+  }
+}
