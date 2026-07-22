@@ -1,7 +1,62 @@
+# Version control
+.git/**
+.gitignore
+.gitattributes
+
+# GitHub / CI
+.github/**
+.azure-pipelines/**
+*.yml
+*.yaml
+
+# Editor / IDE
 .vscode/**
-node_modules/**
+.idea/**
+*.code-workspace
+
+# TypeScript source & config (only compiled out/ ships)
 src/**
 tsconfig.json
 **/*.ts
 **/*.map
-.gitignore
+*.tsbuildinfo
+
+# Node / package manager (no runtime deps; --no-dependencies is used)
+node_modules/**
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.npmrc
+
+# Tests & coverage
+test/**
+tests/**
+coverage/**
+.nyc_output/**
+**/*.test.*
+
+# Linting / formatting configs
+.eslintrc*
+.eslintignore
+.prettierrc*
+.prettierignore
+.editorconfig
+
+# Tooling configs
+mise.toml
+.nvmrc
+.node-version
+
+# Build artifacts & packaged files
+*.vsix
+
+# Docs & assets not needed at runtime
+CONTRIBUTING.md
+CHANGELOG.md
+docs/**
+images/**
+
+# Logs & misc
+*.log
+logs/**
+.cache/**
