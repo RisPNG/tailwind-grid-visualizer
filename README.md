@@ -72,7 +72,12 @@ tailwind-grid-visualizer/
 ├── package.json          # manifest: activation, settings, scripts
 ├── tsconfig.json         # TypeScript config
 ├── .vscodeignore         # files excluded from the .vsix
+├── .vscode/launch.json   # F5 debug config (Extension Development Host)
 ├── README.md
+├── CHANGELOG.md
+├── LICENSE
+├── images/
+│   └── icon.png          # marketplace icon
 └── src/
     └── extension.ts      # all extension logic
 ```
@@ -88,4 +93,4 @@ tailwind-grid-visualizer/
 
 ## License
 
-MIT
+[The Unlicense](https://unlicense.org) — public domain, no conditions.

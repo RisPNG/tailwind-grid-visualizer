@@ -4,10 +4,25 @@
   "description": "Visualize Tailwind CSS grid-cols definitions with proportional column diagrams on hover",
   "version": "0.1.0",
   "publisher": "rispng",
+  "license": "Unlicense",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RisPNG/tailwind-grid-visualizer.git"
+  },
+  "bugs": "https://github.com/RisPNG/tailwind-grid-visualizer/issues",
+  "homepage": "https://github.com/RisPNG/tailwind-grid-visualizer",
+  "icon": "images/icon.png",
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "grid",
+    "css",
+    "visualization"
+  ],
   "engines": {
     "vscode": "^1.80.0"
   },
-  "categories": ["Other"],
+  "categories": ["Visualization", "Other"],
   "activationEvents": [
     "onStartupFinished"
   ],
@@ -30,9 +45,10 @@
     }
   },
   "scripts": {
+    "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
     "watch": "tsc -watch -p ./",
-    "package": "npx @vscode/vsce package --no-dependencies --allow-missing-repository"
+    "package": "npx @vscode/vsce package --no-dependencies"
   },
   "devDependencies": {
     "@types/vscode": "^1.80.0",

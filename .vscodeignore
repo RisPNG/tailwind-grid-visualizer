@@ -52,9 +52,7 @@ mise.toml
 
 # Docs & assets not needed at runtime
 CONTRIBUTING.md
-CHANGELOG.md
 docs/**
-images/**
 
 # Logs & misc
 *.log
